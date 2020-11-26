@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
     public_key_path = nil  # not yet supported
   else
     spec.files    = files - jruby_files
-    spec.add_dependency "oj",                             "3.10.16"
+    spec.add_dependency "oj",                             "~> 3.10"
     spec.add_dependency "msgpack",                        "~> 1.1.0"
     spec.add_development_dependency "yard",               "~> 0.9.11"
     private_key_path = File.expand_path(File.join(ENV['HOME'], '.gem', 'transit-ruby', 'gem-private_key.pem'))
